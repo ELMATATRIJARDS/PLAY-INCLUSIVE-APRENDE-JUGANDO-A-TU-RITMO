@@ -1,0 +1,1469 @@
+/* ----------------------------- */
+/*     ESTILO INFANTIL TOTAL     */
+/* ----------------------------- */
+
+body {
+    font-family: 'Comic Sans MS', Arial, sans-serif;
+    background: linear-gradient(180deg, #ffe6fa, #e3f2fd, #fff3cd);
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+/* ENCABEZADO */
+header {
+    background: #ff9ff3;
+    padding: 25px;
+    color: white;
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0 4px 10px rgba(255, 105, 180, 0.4);
+}
+
+header h1 {
+    font-size: 32px;
+    margin: 0;
+    text-shadow: 2px 2px #ffa9e0;
+}
+
+/* BOTONES DEL MENÚ */
+nav button {
+    padding: 12px 25px;
+    font-size: 20px;
+    margin: 7px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Colores infantiles pastel */
+.boton-numeros { background: #feca57; }
+.boton-animales { background: #55efc4; }
+.boton-colores { background: #ff7675; }
+.boton-figuras { background: #74b9ff; }
+
+nav button:hover {
+    transform: scale(1.15);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+}
+
+/* ---------------------------------- */
+/* BOTONES DE NÚMEROS GRANDES INFANTILES */
+/* ---------------------------------- */
+#numeros .tarjeta button {
+    font-size: 2rem;           /* Letra más grande */
+    padding: 20px 40px;        /* Más espacio dentro del botón */
+    border-radius: 15px;       /* Bordes redondeados */
+    background-color: #ffcc00; /* Color amarillo alegre */
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+#numeros .tarjeta button:hover {
+    transform: scale(1.1);
+    background-color: #ffd633; /* Se aclara un poco al pasar el mouse */
+}
+
+
+/* TÍTULOS */
+h2 {
+    color: #6c5ce7;
+    font-size: 28px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px #dcd6ff;
+}
+
+/* SECCIONES */
+.seccion {
+    padding: 30px;
+}
+
+.oculto {
+    display: none;
+}
+
+/* CONTENEDOR DE TARJETAS */
+.contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+/* TARJETAS INFANTILES */
+.tarjeta {
+    background: #ffffff;
+    border-radius: 25px;
+    padding: 20px;
+    width: 190px;
+    box-shadow: 0 4px 12px rgba(150, 150, 150, 0.3);
+    border: 3px solid #f7d7ff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(100,100,100,0.3);
+}
+
+/* IMÁGENES DE TARJETAS */
+.tarjeta img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    background: #fff5ff;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px dashed #ffb8f6;
+    transition: transform 0.3s ease;
+}
+
+.tarjeta img:hover {
+    transform: scale(1.1) rotate(-3deg);
+}
+
+/* BOTONES DE TARJETA */
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background: #ff9ff3;
+    border: none;
+    color: white;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.25s ease, background 0.25s ease;
+}
+
+button:hover {
+    background: #ffb8f6;
+    transform: scale(1.15);
+}
+
+/* FIGURAS (mantengo tus tamaños y formas) */
+.figura {
+    width: 110px;
+    height: 110px;
+    margin: 0 auto 15px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circulo {
+    background: #ff6961;
+    border-radius: 50%;
+}
+
+.cuadrado {
+    background: #77dd77;
+}
+
+.rectangulo {
+    width: 130px;
+    height: 70px;
+    background: #fdfd96;
+    border-radius: 10px;
+}
+
+.ovalo {
+    width: 130px;
+    height: 70px;
+    background: #ffda77;
+    border-radius: 50%;
+}
+
+.triangulo {
+    width: 0;
+    height: 0;
+    border-left: 55px solid transparent;
+    border-right: 55px solid transparent;
+    border-bottom: 110px solid #6fa3ef;
+}
+
+.estrella {
+    width: 0;
+    height: 0;
+    border-right: 55px solid transparent;
+    border-bottom: 40px solid #ffb3e6;
+    border-left: 55px solid transparent;
+    position: relative;
+}
+.estrella::after {
+    content: "";
+    position: absolute;
+    top: -28px;
+    left: -55px;
+    width: 0;
+    height: 0;
+    border-right: 55px solid transparent;
+    border-bottom: 40px solid #ffb3e6;
+    border-left: 55px solid transparent;
+    transform: rotate(180deg);
+}
+
+.rombo {
+    width: 80px;
+    height: 80px;
+    background: #ffa500;
+    transform: rotate(45deg);
+    margin-top: 15px;
+}
+
+.pentagono {
+    position: relative;
+    width: 0;
+    border-style: solid;
+    border-width: 0 55px 80px 55px;
+    border-color: transparent transparent #77c9ff transparent;
+}
+.pentagono::after {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: -55px;
+    border-style: solid;
+    border-width: 50px 55px 0 55px;
+    border-color: #77c9ff transparent transparent transparent;
+}
+
+.hexagono {
+    width: 110px;
+    height: 60px;
+    background: #b19cd9;
+    position: relative;
+}
+.hexagono::before,
+.hexagono::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 55px solid transparent;
+    border-right: 55px solid transparent;
+}
+.hexagono::before {
+    top: -30px;
+    border-bottom: 30px solid #b19cd9;
+}
+.hexagono::after {
+    bottom: -30px;
+    border-top: 30px solid #b19cd9;
+}
+
+.corazon {
+    width: 60px;
+    height: 60px;
+    background: red;
+    position: relative;
+    transform: rotate(-45deg);
+    margin-top: 25px;
+}
+.corazon::before,
+.corazon::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: red;
+    border-radius: 50%;
+}
+.corazon::before {
+    top: -30px;
+    left: 0;
+}
+.corazon::after {
+    left: 30px;
+    top: 0;
+}
+
+
+/* ---------------------------------- */
+/* --------  RESPONSIVE  ------------ */
+/* ---------------------------------- */
+
+@media (max-width: 900px) {
+    .tarjeta {
+        width: 160px;
+    }
+
+    .tarjeta img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    nav button {
+        width: 45%;
+        font-size: 16px;
+    }
+
+    .tarjeta {
+        width: 140px;
+    }
+
+    .tarjeta img {
+        width: 110px;
+        height: 110px;
+    }
+}
+
+@media (max-width: 400px) {
+    nav button {
+        width: 100%;
+    }
+
+    .tarjeta {
+        width: 120px;
+    }
+
+    .tarjeta img {
+        width: 95px;
+        height: 95px;
+    }
+}
+/* =============================== */
+/*      COMENTARIOS ESTILO        */
+/* =============================== */
+
+.comentario-formulario {
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    width: 80%;
+    margin: auto;
+    box-shadow: 0 4px 12px rgba(150,150,150,0.3);
+}
+
+#coment-text {
+    width: 90%;
+    height: 90px;
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid #ffb8f6;
+    font-family: inherit;
+    resize: none;
+}
+
+.comentarios-fijos {
+    position: sticky;
+    bottom: 0;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 -4px 12px rgba(0,0,0,0.1);
+    z-index: 10;
+}
+
+
+#coment-stars {
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#lista-comentarios {
+    margin-top: 25px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.comentario-item {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    border-left: 6px solid #ff9ff3;
+    box-shadow: 0 4px 10px rgba(150,150,150,0.2);
+    text-align: left;
+}
+
+/* =============================== */
+/*      MEMORAMA 3x3 FIGURAS       */
+/* =============================== */
+
+#memorama {
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-template-rows: repeat(2, 120px);
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.memoria {
+    background: #ffe6fa;
+    border: 3px dashed #ff9ff3;
+    border-radius: 20px;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.memoria:hover {
+    transform: scale(1.1);
+    background: #ffd6f0;
+}
+
+.memoria.pareja {
+    background: #afffaf; /* cambia color al descubrir la pareja */
+    cursor: default;
+}
+
+/* =============================== */
+/*   UNIR SÍLABAS ANIMALES        */
+/* =============================== */
+
+#silabas-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    gap: 150px;
+    margin-top: 30px;
+}
+
+.columna {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.silaba {
+    background: #ffebcd;
+    padding: 18px 25px;
+    border-radius: 20px;
+    font-size: 26px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    user-select: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.silaba:hover {
+    transform: scale(1.05);
+}
+
+#silabas-container img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+/* Canvas para dibujar líneas */
+#lineas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+}
+
+/* Confeti simple */
+.confeti {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    z-index: 9999;
+    border-radius: 50%;
+    animation: caer 1s linear forwards;
+}
+
+@keyframes caer {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(150px) rotate(360deg); opacity: 0; }
+}
+
+/* Resaltar sílabas correctas o incorrectas */
+.silaba.correcta {
+    background-color: #a2fba2 !important;
+}
+
+.silaba.incorrecta {
+    background-color: #ffb3b3 !important;
+}
+
+/* Responsive para los niños */
+@media (max-width: 900px) {
+    #silabas-container {
+        gap: 100px;
+    }
+}
+
+@media (max-width: 600px) {
+    #silabas-container {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .columna {
+        flex-direction: row;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .silaba {
+        font-size: 22px;
+        padding: 15px 20px;
+    }
+
+    #silabas-container img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Contenedor general */
+#adivinanzas-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 10px;
+}
+
+/* Tarjetas */
+.tarjeta-adivinanza {
+    background: linear-gradient(135deg, #fff7d1, #ffe3b3);
+    border: 3px solid #ffcf77;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0px 6px 15px rgba(0,0,0,0.15);
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    height: 300px; /* MISMO TAMAÑO PARA TODAS */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tarjeta-adivinanza:hover {
+    transform: scale(1.05);
+}
+
+/* Imagen */
+.tarjeta-img {
+    width: 100%;
+    max-width: 130px;
+    margin: 0 auto;
+    height: 130px; 
+    object-fit: contain;
+    transition: transform 0.4s ease;
+    border-radius: 15px;
+}
+
+/* Borde animado cuando se revela */
+.tarjeta-adivinanza.revelada .tarjeta-img {
+    border: 5px solid transparent;
+    animation: bordeColores 2s linear infinite;
+}
+
+@keyframes bordeColores {
+    0% { border-color: #ff595e; }
+    25% { border-color: #ffca3a; }
+    50% { border-color: #8ac926; }
+    75% { border-color: #1982c4; }
+    100% { border-color: #6a4c93; }
+}
+
+/* Texto de adivinanza */
+.tarjeta-adivinanza p {
+    font-size: 0.95rem;
+    line-height: 1.25;
+    margin-top: 10px;
+    color: #333;
+    height: 70px; /* espacio fijo para que no se muevan */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Ajuste del nombre para que se vea más grande y claro */
+/* Nombre sin colores, grande y claro */
+.nombre-adivinanza {
+    font-size: 2.2rem !important;   /* más grande y visible */
+    font-weight: 700;
+    color: #000 !important;         /* siempre negro */
+    text-shadow: none !important;   /* sin efectos, limpio */
+
+    margin-top: 12px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: 0.35s ease;
+}
+
+/* Cuando aparece */
+.nombre-adivinanza.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ========================= */
+/* LOGIN */
+/* ========================= */
+
+#login{
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(180deg, #ffe6fa, #e3f2fd, #fff3cd);
+}
+
+.login-box{
+    background:white;
+    padding:40px;
+    border-radius:25px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.2);
+    width:320px;
+}
+
+.login-box h1{
+    color:#ff69b4;
+}
+
+.login-box input{
+    width:90%;
+    padding:15px;
+    border-radius:15px;
+    border:2px solid #ffb8f6;
+    margin-top:15px;
+    font-size:18px;
+}
+
+.login-box button{
+    margin-top:20px;
+    width:100%;
+}
+
+#mensaje-error{
+    color:red;
+    font-weight:bold;
+    margin-top:15px;
+}
+
+/* =============================== */
+/*       TRABALENGUAS              */
+/* =============================== */
+
+#trabalenguas .tarjeta {
+    width: 240px;
+    min-height: 250px;
+    background: #f0fbff;
+    border: 3px solid #8fd3ff;
+}
+
+#trabalenguas p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+    font-weight: bold;
+}
+
+/* =============================== */
+/*      TEMA CELESTE INFANTIL      */
+/*      (AGREGAR AL FINAL)         */
+/* =============================== */
+
+/* Fondo principal */
+body{
+    background: linear-gradient(180deg, #dff6ff, #bfe9ff, #e8f9ff);
+}
+
+/* Encabezado */
+header{
+    background: #6ecbff;
+    box-shadow: 0 4px 10px rgba(110, 203, 255, 0.4);
+}
+
+header h1{
+    text-shadow: 2px 2px #9ddfff;
+}
+
+/* Botones del menú */
+nav button{
+    background: #6ecbff;
+}
+
+/* Hover botones menú */
+nav button:hover{
+    background: #9ddfff;
+}
+
+/* Botones generales */
+button{
+    background: #6ecbff;
+}
+
+button:hover{
+    background: #9ddfff;
+}
+
+/* Tarjetas */
+.tarjeta{
+    border: 3px solid #bfe9ff;
+    box-shadow: 0 4px 12px rgba(120, 190, 255, 0.3);
+}
+
+/* Imágenes */
+.tarjeta img{
+    background: #eef9ff;
+    border: 2px dashed #8fd3ff;
+}
+
+/* Comentarios */
+.comentario-item{
+    border-left: 6px solid #6ecbff;
+}
+
+/* Área comentarios */
+.comentario-formulario{
+    border: 3px solid #bfe9ff;
+}
+
+/* Caja de texto */
+#coment-text{
+    border: 2px solid #8fd3ff;
+}
+
+/* Login */
+#login{
+    background: linear-gradient(180deg, #dff6ff, #bfe9ff, #e8f9ff);
+}
+
+.login-box h1{
+    color:#4bbcff;
+}
+
+.login-box input{
+    border:2px solid #8fd3ff;
+}
+
+/* Sílabas */
+.silaba{
+    background: #dff6ff;
+}
+
+/* Hover sílabas */
+.silaba:hover{
+    background: #bfe9ff;
+}
+
+/* Memorama */
+.memoria{
+    background: #dff6ff;
+    border: 3px dashed #6ecbff;
+}
+
+.memoria:hover{
+    background: #bfe9ff;
+}
+
+/* Adivinanzas */
+.tarjeta-adivinanza{
+    background: linear-gradient(135deg, #e8f9ff, #cdefff);
+    border: 3px solid #8fd3ff;
+}
+
+/* Bordes colores animados */
+@keyframes bordeColores {
+    0% { border-color: #6ecbff; }
+    25% { border-color: #9ddfff; }
+    50% { border-color: #4bbcff; }
+    75% { border-color: #7ed6ff; }
+    100% { border-color: #bfe9ff; }
+}
+
+/* Trabalenguas */
+#trabalenguas .tarjeta{
+    background: #e8f9ff;
+    border: 3px solid #6ecbff;
+}
+
+/* =============================== */
+/*     RIMAS BONITAS E INFANTILES  */
+/* =============================== */
+
+/* =============================== */
+/*     CONTENEDOR DE RIMAS         */
+/* =============================== */
+
+.contenedor-rimas{
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+
+    justify-items: center;
+
+    align-items: start;
+
+    margin-top: 30px;
+}
+
+/* Celulares */
+@media (max-width:700px){
+    .contenedor-rimas{
+        grid-template-columns: 1fr;
+    }
+}
+
+/* TARJETA */
+.tarjeta-rima{
+    background: linear-gradient(180deg, #ffffff, #fdf6ff);
+    border: 5px solid #8fd3ff;
+    border-radius: 35px;
+    padding: 30px 25px;
+
+    width: 100%;
+    max-width: 380px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,0.15),
+        inset 0 0 15px rgba(255,255,255,0.8);
+
+    position: relative;
+    overflow: hidden;
+
+    transition: transform 0.3s ease;
+}
+
+/* Decoración */
+.tarjeta-rima::before{
+    content:"☁️";
+    position:absolute;
+    top:10px;
+    left:15px;
+    font-size:30px;
+}
+
+.tarjeta-rima::after{
+    content:"⭐";
+    position:absolute;
+    top:10px;
+    right:15px;
+    font-size:28px;
+}
+
+/* Hover */
+.tarjeta-rima:hover{
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.22);
+}
+
+/* IMAGEN GRANDE */
+.tarjeta-rima img{
+    width: 200px;
+    height: 200px;
+
+    object-fit: cover;
+
+    border-radius: 30px;
+
+    border: 5px solid white;
+
+    background:white;
+
+    margin-top:10px;
+    margin-bottom:20px;
+
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+
+    transition: transform 0.3s ease;
+}
+
+/* Animación imagen */
+.tarjeta-rima img:hover{
+    transform: scale(1.08) rotate(-2deg);
+}
+
+/* TEXTO DE LA RIMA */
+.tarjeta-rima p{
+    font-size: 1.55rem;
+    line-height: 1.9;
+
+    font-weight: bold;
+
+    color:#444;
+
+    text-align:center;
+
+    background: rgba(255,255,255,0.7);
+
+    padding:15px;
+
+    border-radius:20px;
+
+    width:90%;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* Responsive */
+@media (max-width:600px){
+
+    .tarjeta-rima{
+        width:90%;
+        min-height:380px;
+    }
+
+    .tarjeta-rima img{
+        width:170px;
+        height:170px;
+    }
+
+    .tarjeta-rima p{
+        font-size:1.3rem;
+    }
+}
+
+.palabra-con-img{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    background:#ffffff;
+    padding:4px 10px;
+    border-radius:20px;
+    vertical-align:middle;
+}
+
+.palabra-con-img img{
+    width:45px;
+    height:45px;
+    object-fit:cover;
+    border-radius:12px;
+    border:2px solid #7ed6df;
+    vertical-align:middle;
+}
+
+.texto-rima{
+    font-size: 2rem;
+    line-height: 1.8;
+    color:#333;
+    font-weight:bold;
+    text-align:center;
+}
+
+/* =============================== */
+/*      CUADRO BONITO RIMAS       */
+/* =============================== */
+
+.tarjeta-rima{
+    background: linear-gradient(180deg, #ffffff, #fdf6ff);
+    border: 5px solid #8fd3ff;
+    border-radius: 35px;
+    padding: 30px 25px;
+    width: 380px;
+    min-height: 320px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,0.15),
+        inset 0 0 15px rgba(255,255,255,0.8);
+
+    position: relative;
+    overflow: hidden;
+
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-rima:hover{
+    transform: translateY(-8px) scale(1.03);
+}
+
+/* decoración infantil */
+.tarjeta-rima::before{
+    content:"⭐";
+    position:absolute;
+    top:15px;
+    right:20px;
+    font-size:35px;
+}
+
+.tarjeta-rima::after{
+    content:"🫧";
+    position:absolute;
+    top:18px;
+    left:18px;
+    font-size:28px;
+}
+
+/* texto */
+.texto-rima{
+    font-size: 2rem;
+    line-height: 2;
+    color:#444;
+    font-weight:bold;
+    text-align:center;
+}
+
+/* palabra con imagen */
+.palabra-con-img{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+
+    background:#ffffff;
+    padding:8px 12px;
+    border-radius:20px;
+
+    border:3px solid #d6f1ff;
+
+    box-shadow:0 4px 10px rgba(0,0,0,0.08);
+
+    vertical-align:middle;
+}
+
+/* imágenes */
+.palabra-con-img img{
+    width:55px;
+    height:55px;
+    object-fit:cover;
+
+    border-radius:15px;
+    border:3px solid #8fd3ff;
+}
+
+/* =============================== */
+/*   OBJETOS EN QUECHUA MEJORADO  */
+/* =============================== */
+
+#objetos-quechua{
+    background: linear-gradient(180deg,#e8f9ff,#fff6e5);
+    border-radius: 30px;
+    margin: 20px;
+    padding: 30px;
+}
+
+.texto-quechua{
+    font-size: 1.3rem;
+    color:#444;
+    font-weight:bold;
+}
+
+.contenedor-quechua{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+    gap:25px;
+    margin-top:30px;
+}
+
+.tarjeta-quechua{
+    background:white;
+    border-radius:25px;
+    padding:20px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.15);
+    transition:0.3s;
+    border:4px solid #bfe9ff;
+}
+
+.tarjeta-quechua:hover{
+    transform:translateY(-8px) scale(1.05);
+}
+
+.tarjeta-quechua img{
+    width:130px;
+    height:130px;
+    object-fit:cover;
+    border-radius:20px;
+    cursor:pointer;
+    border:4px solid #8fd3ff;
+    transition:0.3s;
+}
+
+.tarjeta-quechua img:hover{
+    transform:scale(1.08);
+}
+
+.tarjeta-quechua p{
+    margin-top:15px;
+    font-size:1.5rem;
+    font-weight:bold;
+    color:#5a2d82;
+}
+.contenedor-quechua{
+    display:grid;
+
+    /* 3 columnas */
+    grid-template-columns: repeat(3, 1fr);
+
+    gap:25px;
+
+    margin-top:30px;
+
+    justify-items:center;
+}
+
+/* =============================== */
+/*     TARJETAS GIRATORIAS         */
+/* =============================== */
+
+.tarjeta-quechua{
+    width: 220px;
+    height: 260px;
+
+    perspective: 1000px;
+
+    cursor:pointer;
+}
+
+.tarjeta-inner{
+    position: relative;
+
+    width:100%;
+    height:100%;
+
+    transition: transform 0.8s;
+
+    transform-style: preserve-3d;
+}
+
+/* cuando se activa gira */
+.tarjeta-quechua.activa .tarjeta-inner{
+    transform: rotateY(180deg);
+}
+
+/* caras */
+.tarjeta-front,
+.tarjeta-back{
+    position:absolute;
+
+    width:100%;
+    height:100%;
+
+    backface-visibility:hidden;
+
+    border-radius:25px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    box-shadow:0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* frente secreto */
+.tarjeta-front{
+    background: linear-gradient(180deg,#6ecbff,#bfe9ff);
+
+    color:white;
+
+    font-size:5rem;
+
+    font-weight:bold;
+
+    border:5px solid white;
+}
+
+/* parte trasera */
+.tarjeta-back{
+    background:white;
+
+    transform: rotateY(180deg);
+
+    border:4px solid #8fd3ff;
+
+    padding:15px;
+}
+
+.tarjeta-back img{
+    width:130px;
+    height:130px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    border:4px solid #8fd3ff;
+
+    transition:0.3s;
+}
+
+.tarjeta-back img:hover{
+    transform:scale(1.08);
+}
+
+.tarjeta-back p{
+    margin-top:15px;
+
+    font-size:1.5rem;
+
+    font-weight:bold;
+
+    color:#5a2d82;
+}
+
+/* =============================== */
+/*    IMAGEN SECRETA QUE GIRA      */
+/* =============================== */
+
+.imagen-oculta{
+    width:130px;
+    height:130px;
+
+    margin:auto;
+
+    perspective:1000px;
+
+    cursor:pointer;
+}
+
+.imagen-inner{
+    position:relative;
+
+    width:100%;
+    height:100%;
+
+    transition: transform 0.8s;
+
+    transform-style: preserve-3d;
+}
+
+/* gira */
+.imagen-oculta.activa .imagen-inner{
+    transform: rotateY(180deg);
+}
+
+/* caras */
+.imagen-front,
+.imagen-back{
+    position:absolute;
+
+    width:100%;
+    height:100%;
+
+    backface-visibility:hidden;
+
+    border-radius:20px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* parte frontal */
+.imagen-front{
+    background: linear-gradient(180deg,#6ecbff,#bfe9ff);
+
+    font-size:4rem;
+
+    color:white;
+
+    border:4px solid white;
+}
+
+/* imagen */
+.imagen-back{
+    transform: rotateY(180deg);
+}
+
+.imagen-back img{
+    width:130px;
+    height:130px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    border:4px solid #8fd3ff;
+}
+/* =============================== */
+/*   FIX PARA GITHUB PAGES         */
+/* =============================== */
+
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    overflow-x: hidden;
+}
+
+/* Contenedor de tarjetas */
+.contenedor-quechua{
+    display:grid;
+    grid-template-columns: repeat(3, minmax(220px, 1fr));
+    gap:30px;
+    justify-items:center;
+    align-items:start;
+    width:100%;
+}
+
+/* Tarjetas */
+.tarjeta-quechua{
+    width:220px;
+    height:260px;
+    min-width:220px;
+    min-height:260px;
+}
+
+/* Caras */
+.tarjeta-front,
+.tarjeta-back{
+    width:100%;
+    height:100%;
+}
+
+/* Imagen */
+.tarjeta-back img{
+    width:130px;
+    height:130px;
+    object-fit:contain;
+    display:block;
+}
+
+/* Responsive */
+@media (max-width:900px){
+
+    .contenedor-quechua{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width:600px){
+
+    .contenedor-quechua{
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* =============================== */
+/*      ONOMATOPEYAS 5 x 5         */
+/* =============================== */
+
+#onomatopeyas-container{
+    display:grid;
+
+    /* 5 columnas */
+    grid-template-columns: repeat(5, 1fr);
+
+    gap:25px;
+
+    justify-items:center;
+
+    align-items:start;
+
+    width:100%;
+
+    margin-top:30px;
+}
+
+/* tarjetas */
+#onomatopeyas-container .tarjeta{
+    width:200px;
+    min-height:240px;
+}
+
+/* imágenes */
+#onomatopeyas-container .tarjeta img{
+    width:130px;
+    height:130px;
+    object-fit:contain;
+}
+
+/* tablets */
+@media (max-width:1000px){
+
+    #onomatopeyas-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+/* celulares */
+@media (max-width:700px){
+
+    #onomatopeyas-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* celulares pequeños */
+@media (max-width:450px){
+
+    #onomatopeyas-container{
+        grid-template-columns: 1fr;
+    }
+
+}
+#onomatopeyas-container{
+    display:grid;
+    grid-template-columns: repeat(5, 180px);
+    justify-content:center;
+    gap:20px;
+    margin-top:30px;
+}
+
+/* tarjetas */
+#onomatopeyas-container .tarjeta{
+    width:180px;
+    min-height:230px;
+}
+#onomatopeyas-container .tarjeta img{
+    width:120px;
+    height:120px;
+}
+
+.comentario-formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.comentario-formulario label{
+    width: 90%;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 28px;
+}
+
+#coment-stars{
+    width: 10%;
+}

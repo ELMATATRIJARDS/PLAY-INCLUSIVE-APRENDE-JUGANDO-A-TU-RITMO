@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>PLAY INCLUSIVE: APRENDE JUGANDO A TU RITMO</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<!-- =============================== -->
+<!--      PANTALLA DE ACCESO        -->
+<!-- =============================== -->
+
+<div id="login">
+    <div class="login-box">
+        <h1>🔐 PLAY INCLUSIVE</h1>
+        <p>Ingresa los 4 digitos para entrar</p>
+
+        <input type="password" id="codigo" placeholder="Escribe los 4 dígitos" maxlength="4">
+
+        <button onclick="verificarCodigo()">Entrar</button>
+
+        <p id="mensaje-error"></p>
+    </div>
+</div>
+
+<!-- =============================== -->
+<!--      CONTENIDO PRINCIPAL       -->
+<!-- =============================== -->
+
+<div id="contenido" style="display:none;">
+
+<header>
+    <h1>🌟 PLAY INCLUSIVE: APRENDE JUGANDO A TU RITMO 🌟</h1>
+
+    <nav>
+        <button onclick="mostrar('animales')">🐾 Onomatopeyas</button>
+        <button onclick="mostrar('adivinanzas')">❓ Adivinanzas</button>
+        <button onclick="mostrar('silabas-animales')">🔤 Une Sílabas</button>
+        <button onclick="mostrar('trabalenguas')">🗣️ Trabalenguas</button>
+        <button onclick="mostrar('rimas')">🎵 Rimas</button>
+        <button onclick="mostrar('objetos-quechua')">🪶 Aprendamos Quechua</button>
+    </nav>
+</header>
+
+<!-- =============================== -->
+<!--   OBJETOS EN QUECHUA           -->
+<!-- =============================== -->
+
+<section id="objetos-quechua" class="seccion oculto">
+
+    <h2>🪶 Aprendamos Quechua</h2>
+    <p class="texto-quechua">Toca la imagen secreta para descubrirla</p>
+
+    <div class="contenedor-quechua">
+
+        <!-- CASA -->
+        <div class="tarjeta-quechua">
+
+            <div class="imagen-oculta"
+                 onclick="this.classList.toggle('activa')">
+
+                <div class="imagen-inner">
+
+                    <div class="imagen-front">
+                        ❓
+                    </div>
+
+                    <div class="imagen-back">
+
+                        <img src="img/wasi.png" alt="Wasi"
+                             onclick="event.stopPropagation(); playSound('wasi')">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <p>WASI</p>
+
+            <audio id="wasi" src="sonidos/guasi.mp3"></audio>
+
+        </div>
+
+        <!-- SOL -->
+        <div class="tarjeta-quechua">
+
+            <div class="imagen-oculta"
+                 onclick="this.classList.toggle('activa')">
+
+                <div class="imagen-inner">
+
+                    <div class="imagen-front">
+                        ❓
+                    </div>
+
+                    <div class="imagen-back">
+
+                        <img src="img/sol.jpg" alt="Inti"
+                             onclick="event.stopPropagation(); playSound('inti')">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <p>INTI</p>
+
+            <audio id="inti" src="sonidos/Inti.mp3"></audio>
+
+        </div>
+
+        <!-- LUNA -->
+        <div class="tarjeta-quechua">
+
+            <div class="imagen-oculta"
+                 onclick="this.classList.toggle('activa')">
+
+                <div class="imagen-inner">
+
+                    <div class="imagen-front">
+                        ❓
+                    </div>
+
+                    <div class="imagen-back">
+
+                        <img src="img/luna.jpg" alt="Killa"
+                             onclick="event.stopPropagation(); playSound('killa')">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <p>KILLA</p>
+
+            <audio id="killa" src="sonidos/Killa.mp3"></audio>
+
+        </div>
+
+        <!-- MANO -->
+        <div class="tarjeta-quechua">
+
+            <div class="imagen-oculta"
+                 onclick="this.classList.toggle('activa')">
+
+                <div class="imagen-inner">
+
+                    <div class="imagen-front">
+                        ❓
+                    </div>
+
+                    <div class="imagen-back">
+
+                        <img src="img/mano.jpg" alt="Maki"
+                             onclick="event.stopPropagation(); playSound('maki')">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <p>MAKI</p>
+
+            <audio id="maki" src="sonidos/Maki.mp3"></audio>
+
+        </div>
+
+        <!-- FLOR -->
+        <div class="tarjeta-quechua">
+
+            <div class="imagen-oculta"
+                 onclick="this.classList.toggle('activa')">
+
+                <div class="imagen-inner">
+
+                    <div class="imagen-front">
+                        ❓
+                    </div>
+
+                    <div class="imagen-back">
+
+                        <img src="img/flor.jpg" alt="Tika"
+                             onclick="event.stopPropagation(); playSound('tika')">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <p>T'IKA</p>
+
+            <audio id="tika" src="sonidos/Tica.mp3"></audio>
+
+        </div>
+
+        <!-- AGUA -->
+        <div class="tarjeta-quechua">
+
+            <div class="imagen-oculta"
+                 onclick="this.classList.toggle('activa')">
+
+                <div class="imagen-inner">
+
+                    <div class="imagen-front">
+                        ❓
+                    </div>
+
+                    <div class="imagen-back">
+
+                        <img src="img/agua.jpg" alt="Yaku"
+                             onclick="event.stopPropagation(); playSound('yaku')">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <p>YAKU</p>
+
+            <audio id="yaku" src="sonidos/yaku.mp3"></audio>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =============================== -->
+<!--      SECCIÓN TRABALENGUAS      -->
+<!-- =============================== -->
+
+<section id="trabalenguas" class="seccion oculto">
+
+    <h2>🗣️ Trabalenguas</h2>
+
+    <div class="contenedor">
+
+        <div class="tarjeta">
+            <p>
+                🐯<br><br>
+                Tres tristes tigres<br>
+                comen trigo<br>
+                en un trigal.
+            </p>
+        </div>
+
+        <div class="tarjeta">
+            <p>
+                🔨<br><br>
+                Pablito clavó<br>
+                un clavito<br>
+                en la calva<br>
+                de un calvito.
+            </p>
+        </div>
+
+        <div class="tarjeta">
+            <p>
+                🥔<br><br>
+                Pepe pela papas<br>
+                para Pepa.
+            </p>
+        </div>
+
+        <div class="tarjeta">
+            <p>
+                🐸<br><br>
+                La rana Ramona
+                rema rápido río 
+                arriba.<br>
+                
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =============================== -->
+<!--         SECCIÓN RIMAS          -->
+<!-- =============================== -->
+
+<section id="rimas" class="seccion oculto">
+
+    <h2>🎵 Rimas</h2>
+
+    <div class="contenedor-rimas">
+
+    <!-- RIMA 1 -->
+    <div class="tarjeta-rima">
+        <p class="texto-rima">
+
+            El 
+
+            <span class="palabra-con-img">
+                <img src="img/gato.jpg"
+                     alt="gato"
+                     onclick="playSound('audio-gato')">
+            </span>
+
+            juguetón <br>
+
+            salta sobre el 
+
+            <span class="palabra-con-img">
+                <img src="img/sillon.png"
+                     alt="sillón"
+                     onclick="playSound('audio-sillon')">
+            </span>.
+
+        </p>
+
+        <audio id="audio-gato" src="sonidos/gato.mp3"></audio>
+        <audio id="audio-sillon" src="sonidos/sillon.mp3"></audio>
+    </div>
+
+    <!-- RIMA 2 -->
+    <div class="tarjeta-rima">
+        <p class="texto-rima">
+
+            El 
+
+            <span class="palabra-con-img">
+                <img src="img/perro.jpg"
+                     alt="perro"
+                     onclick="playSound('audio-perro')">
+            </span>
+
+            travieso <br>
+
+            mueve mucho el 
+
+            <span class="palabra-con-img">
+                <img src="img/hueso.jpg"
+                     alt="hueso"
+                     onclick="playSound('audio-hueso')">
+            </span>.
+
+        </p>
+
+        <audio id="audio-perro" src="sonidos/perro.mp3"></audio>
+        <audio id="audio-hueso" src="sonidos/hueso.mp3"></audio>
+    </div>
+
+    <!-- RIMA 3 -->
+    <div class="tarjeta-rima">
+        <p class="texto-rima">
+
+            Sale el 
+
+            <span class="palabra-con-img">
+                <img src="img/sol.jpg"
+                     alt="sol"
+                     onclick="playSound('audio-sol')">
+            </span>
+
+            brillante <br>
+
+            y canta el 
+
+            <span class="palabra-con-img">
+                <img src="img/elefante.jpg"
+                     alt="elefante"
+                     onclick="playSound('audio-elefante')">
+            </span>.
+
+        </p>
+
+        <audio id="audio-sol" src="sonidos/sol.mp3"></audio>
+        <audio id="audio-elefante" src="sonidos/elefante.mp3"></audio>
+    </div>
+
+    <!-- RIMA 4 -->
+    <div class="tarjeta-rima">
+        <p class="texto-rima">
+
+            El 
+
+            <span class="palabra-con-img">
+                <img src="img/pato.jpg"
+                     alt="pato"
+                     onclick="playSound('audio-pato')">
+            </span>
+
+            en la laguna,<br>
+
+            canta bajo la
+
+            <span class="palabra-con-img">
+                <img src="img/luna.jpg"
+                     alt="luna"
+                     onclick="playSound('audio-luna')">
+            </span>.
+
+        </p>
+
+        <audio id="audio-pato" src="sonidos/pato.mp3"></audio>
+        <audio id="audio-luna" src="sonidos/luna.mp3"></audio>
+    </div>
+
+</div>
+
+</section>
+
+<!-- =============================== -->
+<!--       SECCIÓN onomatopeya         -->
+<!-- =============================== -->
+
+<section id="animales" class="seccion">
+    <h2>🐾 Onomatopeyas</h2>
+
+    <div id="onomatopeyas-container">
+
+        <div class="tarjeta">
+            <img src="img/vaca.jpg" alt="vaca" onclick="playSound('sonido-vaca')">
+            <button onclick="playSound('vaca')">¿Qué animal es?</button>
+            <audio id="vaca" src="sonidos/vaca.mp3"></audio>
+            <audio id="sonido-vaca" src="sonidos/ruido-vaca.mp3"></audio>
+        </div>
+
+        <div class="tarjeta">
+            <img src="img/gallina.jpg" alt="gallina" onclick="playSound('sonido-gallina')">
+            <button onclick="playSound('gallina')">¿Qué animal es?</button>
+            <audio id="gallina" src="sonidos/gallina.mp3"></audio>
+            <audio id="sonido-gallina" src="sonidos/ruido-gallina.mp3"></audio>
+        </div>
+
+        <div class="tarjeta">
+            <img src="img/caballo.jpg" alt="caballo" onclick="playSound('sonido-caballo')">
+            <button onclick="playSound('caballo')">¿Qué animal es?</button>
+            <audio id="caballo" src="sonidos/caballo.mp3"></audio>
+            <audio id="sonido-caballo" src="sonidos/ruido-caballo.mp3"></audio>
+        </div>
+
+        <div class="tarjeta">
+            <img src="img/cerdo.jpg" alt="cerdo" onclick="playSound('sonido-cerdo')">
+            <button onclick="playSound('cerdo')">¿Qué animal es?</button>
+            <audio id="cerdo" src="sonidos/cerdo.mp3"></audio>
+            <audio id="sonido-cerdo" src="sonidos/ruido-cerdo.mp3"></audio>
+        </div>
+
+        <div class="tarjeta">
+            <img src="img/pato.jpg" alt="pato" onclick="playSound('sonido-pato')">
+            <button onclick="playSound('pato')">¿Qué animal es?</button>
+            <audio id="pato" src="sonidos/pato.mp3"></audio>
+            <audio id="sonido-pato" src="sonidos/ruido-pato.mp3"></audio>
+        </div>
+
+        <div class="tarjeta">
+            <img src="img/gallo.jpg" alt="gallo" onclick="playSound('sonido-gallo')">
+            <button onclick="playSound('gallo')">¿Qué animal es?</button>
+            <audio id="gallo" src="sonidos/gallo.mp3"></audio>
+            <audio id="sonido-gallo" src="sonidos/ruido-gallo.m4a"></audio>
+        </div>
+
+        <div class="tarjeta">
+            <img src="img/oveja.jpg" alt="oveja" onclick="playSound('sonido-oveja')">
+            <button onclick="playSound('oveja')">¿Qué animal es?</button>
+            <audio id="oveja" src="sonidos/oveja.mp3"></audio>
+            <audio id="sonido-oveja" src="sonidos/ruido-oveja.mp3"></audio>
+        </div>
+
+        <div class="tarjeta">
+            <img src="img/burro.avif" alt="burro" onclick="playSound('sonido-burro')">
+            <button onclick="playSound('burro')">¿Qué animal es?</button>
+            <audio id="burro" src="sonidos/burro.mp3"></audio>
+            <audio id="sonido-burro" src="sonidos/ruido-burro.mp3"></audio>
+        </div>
+
+        <div class="tarjeta">
+            <img src="img/perro.jpg" alt="perro" onclick="playSound('sonido-perro')">
+            <button onclick="playSound('perro')">¿Qué animal es?</button>
+            <audio id="perro" src="sonidos/perro.mp3"></audio>
+            <audio id="sonido-perro" src="sonidos/ruido-perro.m4a"></audio>
+        </div>
+
+        <div class="tarjeta">
+            <img src="img/gato.jpg" alt="gato" onclick="playSound('sonido-gato')">
+            <button onclick="playSound('gato')">¿Qué animal es?</button>
+            <audio id="gato" src="sonidos/gato.mp3"></audio>
+            <audio id="sonido-gato" src="sonidos/ruido-gato.mp3"></audio>
+        </div>
+</div>
+    </div>
+</section>
+
+<!-- =============================== -->
+<!--      SECCIÓN ADIVINANZAS       -->
+<!-- =============================== -->
+
+<section id="adivinanzas" class="seccion oculto">
+
+    <h2>❓ Adivinanzas</h2>
+
+    <div class="contenedor" id="adivinanzas-container">
+
+        <div class="tarjeta-adivinanza" data-img="img/pera.jpg">
+            <img src="img/pregunta.jpg" alt="Pregunta" class="tarjeta-img">
+            <p>Blanco por dentro, verde por fuera. Si quieres que te lo diga, espera. ¿Qué soy?</p>
+        </div>
+
+        <div class="tarjeta-adivinanza" data-img="img/pez.jpg">
+            <img src="img/pregunta.jpg" alt="Pregunta" class="tarjeta-img">
+            <p>Soy pequeño y puedo nadar, vivo en ríos y en el mar. ¿Quién soy?</p>
+        </div>
+
+        <div class="tarjeta-adivinanza" data-img="img/jirafa.png">
+            <img src="img/pregunta.jpg" alt="Pregunta" class="tarjeta-img">
+            <p>Largo, largo, su cuello es y tiene manchas en la piel. ¿Quién es?</p>
+        </div>
+
+        <div class="tarjeta-adivinanza" data-img="img/platano.jpg">
+            <img src="img/pregunta.jpg" alt="Pregunta" class="tarjeta-img">
+            <p>Oro parece, plata no es. ¿Qué es?</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- =============================== -->
+<!--      SECCIÓN SÍLABAS           -->
+<!-- =============================== -->
+
+<section id="silabas-animales" class="seccion oculto">
+
+    <h2>🦊 Une las sílabas de los animales</h2>
+
+    <div id="silabas-container">
+
+        <canvas id="lineas"></canvas>
+
+        <div class="columna" id="col-izq">
+            <div class="silaba" data-match="1">Ca</div>
+            <div class="silaba" data-match="2">Pe</div>
+            <div class="silaba" data-match="3">Ga</div>
+            <div class="silaba" data-match="4">Bu</div>
+            <div class="silaba" data-match="5">Va</div>
+        </div>
+
+        <div class="columna" id="col-der">
+            <div class="silaba" data-match="1">ballo <img src="img/caballo.jpg" width="50"></div>
+            <div class="silaba" data-match="2">rro <img src="img/perro.jpg" width="50"></div>
+            <div class="silaba" data-match="3">to <img src="img/gato.jpg" width="50"></div>
+            <div class="silaba" data-match="4">rro <img src="img/burro.avif" width="50"></div>
+            <div class="silaba" data-match="5">ca <img src="img/vaca.jpg" width="50"></div>
+        </div>
+
+    </div>
+</section>
+
+<!-- =============================== -->
+<!-- ⭐ COMENTARIOS Y ESTRELLAS     -->
+<!-- =============================== -->
+
+<section id="comentarios" class="seccion">
+
+    <h2>⭐ Comentarios y Calificaciones</h2>
+
+    <div class="comentario-formulario">
+
+        <textarea id="coment-text" placeholder="Escribe tu comentario..."></textarea>
+
+        <label>Calificación:</label>
+
+        <select id="coment-stars">
+            <option value="1">1 ⭐</option>
+            <option value="2">2 ⭐</option>
+            <option value="3">3 ⭐</option>
+            <option value="4">4 ⭐</option>
+            <option value="5">5 ⭐</option>
+        </select>
+
+        <button onclick="guardarComentario()">Enviar</button>
+
+    </div>
+
+    <div id="lista-comentarios"></div>
+
+</section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
